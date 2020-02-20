@@ -286,8 +286,8 @@ class Evaluator:
                 plt.show()
                 # plt.waitforbuttonpress()
                 plt.pause(0.05)
-        print(type(result['precision'])
-        print(type(result['recall'])
+        print(type(result['precision']))
+        print(type(result['recall']))
         return results
 
     @staticmethod
