@@ -14,6 +14,7 @@ from collections import Counter
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 from BoundingBox import *
 from BoundingBoxes import *
@@ -288,6 +289,8 @@ class Evaluator:
                 plt.pause(0.05)
         print(type(result['precision']))
         print(type(result['recall']))
+        df = pd.DataFrame({"precision" : result['precision'], "recall" : result['recall']})
+        df.to_csv("precision_recall.csv", index=False)
         return results
 
     @staticmethod
