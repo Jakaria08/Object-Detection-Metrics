@@ -290,7 +290,7 @@ class Evaluator:
         print(type(result['precision']))
         print(type(result['recall']))
         df = pd.DataFrame({"precision" : result['precision'], "recall" : result['recall']})
-        df.to_csv("precision_recall.csv", index=False)
+        df.to_csv("/home/jakaria/Super_Resolution/Object-Detection-Metrics/precision_recall.csv", index=False)
         return results
 
     @staticmethod
