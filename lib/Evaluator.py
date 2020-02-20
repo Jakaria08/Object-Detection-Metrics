@@ -148,7 +148,7 @@ class Evaluator:
     def PlotPrecisionRecallCurve(self,
                                  boundingBoxes,
                                  IOUThreshold=0.5,
-                                 method=MethodAveragePrecision.ElevenPointInterpolation,
+                                 method=MethodAveragePrecision.EveryPointInterpolation,
                                  showAP=False,
                                  showInterpolatedPrecision=False,
                                  savePath=None,

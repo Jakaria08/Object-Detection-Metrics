@@ -324,7 +324,7 @@ validClasses = 0
 detections = evaluator.PlotPrecisionRecallCurve(
     allBoundingBoxes,  # Object containing all bounding boxes (ground truths and detections)
     IOUThreshold=iouThreshold,  # IOU threshold
-    method=MethodAveragePrecision.ElevenPointInterpolation,
+    method=MethodAveragePrecision.EveryPointInterpolation,
     showAP=True,  # Show Average Precision in the title of the plot
     showInterpolatedPrecision=False,  # Don't plot the interpolated precision curve
     savePath=savePath,
